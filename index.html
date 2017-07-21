@@ -102,13 +102,13 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Father</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name=<span class="string">'father'</span>;</div><div class="line">    <span class="keyword">this</span>.speed=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        alert(<span class="keyword">this</span>.name+<span class="string">':speed:18m/s'</span>);</div><div class="line">    &#125;</div><div class="line">    &#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Son</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name=<span class="string">'son'</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//调用函数内部的方法时创建函数的对象去调用</span></div><div class="line"><span class="keyword">var</span> f=<span class="keyword">new</span> Father();</div><div class="line">    f.speed();   <span class="comment">//father:speed:18m/s</span></div><div class="line"><span class="keyword">var</span> s=<span class="keyword">new</span> Son();</div><div class="line">    f.speed.call(s);<span class="comment">//son:speed:18m/s</span></div></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="applay"><a href="#applay" class="headerlink" title="applay()"></a>applay()</h3><p>‘applay():它只有两个参数，第一个参数和call方法的参数一样，第二个参数是一个数组，数组中放所需要的参数’<br>‘实例代码：’<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params">num1,num2</span>)</span>&#123;</div><div class="line">    alert(num1+num2);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">b</span>(<span class="params">num1,num2</span>)</span>&#123;</div><div class="line">    alert(num2-num1);</div><div class="line">&#125;</div><div class="line">a.applay(b,[<span class="number">2</span>,<span class="number">3</span>]);  <span class="comment">//弹出5</span></div></pre></td></tr></table></figure></p>
+<h3 id="apply"><a href="#apply" class="headerlink" title="apply()"></a>apply()</h3><p>‘apply():它只有两个参数，第一个参数和call方法的参数一样，第二个参数是一个数组，数组中放所需要的参数’<br>‘实例代码：’<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params">num1,num2</span>)</span>&#123;</div><div class="line">    alert(num1+num2);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">b</span>(<span class="params">num1,num2</span>)</span>&#123;</div><div class="line">    alert(num2-num1);</div><div class="line">&#125;</div><div class="line">a.apply(b,[<span class="number">2</span>,<span class="number">3</span>]);  <span class="comment">//弹出5</span></div></pre></td></tr></table></figure></p>
 <p><a href="http://minghigh.xin" target="_blank" rel="external">minghigh的博客好好</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/06/demo/" data-id="cj5ddrqb80000ecu7e1zt6vrw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/06/demo/" data-id="cj5ddxn380001hou7f0ajf8ku" class="article-share-link">Share</a>
       
       
     </footer>
@@ -153,7 +153,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/06/hello-world/" data-id="cj5ddrqc30001ecu7gsvhj018" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/06/hello-world/" data-id="cj5ddxn2t0000hou7gbeyey0i" class="article-share-link">Share</a>
       
       
     </footer>
